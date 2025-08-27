@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "./components/layout/header";
-import axios from "./util/axios.customize"
+import axios from "./components/util/axios.customize"
 import { useContext, useEffect } from "react"
 import { AuthContext } from "./components/context/auth.context";
 import { Spin } from "antd";

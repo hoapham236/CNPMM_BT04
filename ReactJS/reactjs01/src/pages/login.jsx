@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { Button, Col, Divider, Form, Input, notification, Row } from 'antd';
-import { loginApi } from '../util/api';
+import { loginApi } from '../components/util/api';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../components/context/auth.context';
-import { ArrowLeftoutlined } from '@ant-design/icons';
+import { ArrowLeftOutlined } from '@ant-design/icons';
 const LoginPage = () => {
     const navigate = useNavigate();
     const { setAuth } = useContext(AuthContext);
@@ -79,7 +79,7 @@ const LoginPage = () => {
                             </Button>
                         </Form.Item>
                     </Form>
-                    <Link to={"/"}><ArrowLeftoutlined /> Quay lại trang chủ</Link>
+                    <Link to={"/"}><ArrowLeftOutlined /> Quay lại trang chủ</Link>
                     <Divider />
                     <div style={{ textAlign: "center" }}>
                         Chưa có tài khoản? <Link to={"/register"}>Đăng ký tại đây</Link>

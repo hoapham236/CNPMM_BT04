@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, Col, Divider, Form, Input, notification, Row } from 'antd';
-import { createUserApi } from '../util/api';
+import { createUserApi } from '../components/util/api';
 import { Link, useNavigate } from 'react-router-dom';
-import { ArrowLeftoutlined } from '@ant-design/icons';
+import { ArrowLeftOutlined } from '@ant-design/icons';
 const RegisterPage = () => {
     const navigate = useNavigate();
     const onFinish = async (values) => {
@@ -80,7 +80,7 @@ const RegisterPage = () => {
                             </Button>
                         </Form.Item>
                     </Form>
-                    <Link to={"/"}><ArrowLeftoutlined /> Quay lại trang chủ</Link>
+                    <Link to={"/"}><ArrowLeftOutlined /> Quay lại trang chủ</Link>
                     <Divider />
                     <div style={{ textAlign: "center" }}>
                         Đã có tài khoản? <Link to={"/login"}>Đăng nhập</Link>
